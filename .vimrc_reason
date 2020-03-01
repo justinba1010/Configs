@@ -5,11 +5,14 @@ Plug 'reasonml-editor/vim-reason-plus'
 Plug 'rgrinberg/vim-ocaml'
 Plug 'morhetz/gruvbox'
 Plug 'junegunn/vim-easy-align'
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " nice to have
-Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'vim-scripts/c.vim'
+Plug 'travitch/hasksyn'
+Plug 'vim-airline/vim-airline'
+Plug 'tpope/vim-fugitive'
+
+
 
 call plug#end()
 

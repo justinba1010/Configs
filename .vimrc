@@ -8,7 +8,6 @@ set linebreak
 syntax enable
 set wrap
 set title
-set ttymouse=xterm2
 set mouse=a
 set nu
 set nornu
@@ -33,12 +32,20 @@ inoremap <A-k> <Esc>:m .-2<CR>==gi
 vnoremap <A-j> :m '>+1<CR>gv=gv
 vnoremap <A-k> :m '<-2<CR>gv=gv
 
-colorscheme gruvbox
-set background=dark    " Setting dark mode
-
 xmap ga <Plug>(EasyAlign)
 
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 " nmap ga <Plug>(EasyAlign)
 set splitbelow
 set splitright
+
+map <C-t><up> :tabr<cr>
+map <C-t><down> :tabl<cr>
+map <C-t><left> :tabp<cr>
+map <C-t><right> :tabn<cr>
+let g:airline#extensions#tabline#enabled = 1
+
+map ,t :tabnew<CR>
+
+:command Wbq :w<BAR>:bd<BAR>:q<CR>
+
